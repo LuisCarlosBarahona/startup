@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> sign up form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1 style="text-align:center">Know you it's very important for us</h1>
+	<p>It only takes a few minutes :)</p>
+	<br>
+	<form action="action_page.php" method="get">
+		<fieldset>
+			<legend>Personal Information:</legend>
+			First name: <br>
+			<input type="text" name="firstname" required>
+			<br>
+Last name:<br>
+<input type="text" name="lastname" required>
+<br>
+Birthday:<br>
+<input type="date" name="bday" max="1997-12-31" required><!--Thinking in a psuedo manner to restrict submits of under age people-->
+<br>
+e-mail:<br>
+<input type="email" name="email" required>
+<br><br>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Hobbies and Routines</legend>
+<p> What is your favorite sport?</p>
+<select name="sports">
+<option value="Football">Football</option>
+<option value="Basketball">Basketball</option>
+<option value="Rugby">Rugby</option>
+<option value="Chess">Chess</option>
+<option value="Ping Pong">Pong</option>
+<option value="don't like">I don't like any sport</option>
+</select>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Tell us about yourself!</legend>
+<textarea name="yourself" rows="10" cols="30" required> 
+</textarea>
+</fieldset>
+<button type="Submit" value="Submit">Submit</button>
+<button type="Reset" value="Clear">Clear</button>
+</form>
+</body>
+</html>
