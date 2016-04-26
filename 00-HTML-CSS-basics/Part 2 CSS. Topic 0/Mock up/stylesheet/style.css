@@ -1,0 +1,86 @@
+article, section, aside, hgroup, nav, header, footer, figure, figcaption { 
+    display: block;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+*{
+	font-weight: bold !important;
+	color:red;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 90%;
+}
+header, footer, aside, nav{
+	background-color:grey;
+}
+*{
+	font-size: 14px;
+	font-family: arial, helvetica;
+}
+header, footer{
+	text-align: center;
+}
+.header{
+	background-color: magenta;
+	font-size: 46px;
+	}
+.content{
+	font-size: 14px;
+}
+#header1{
+	width: 100%;
+	height: 15%;
+	padding: 10px;
+	border-width: 10px;
+	margin: 0;
+}
+.container div{
+width:100%;
+}
+.navigation{
+	background-color: blue;
+	font-size: 12px;
+	width: 25%;
+	padding: 10px;
+	border-width: 10px;
+	float:left;
+}
+.section1{
+	width: 50%;
+	height: 70%;
+	border-width: 10px;
+	margin: 0;
+	float:left;
+}
+.sidebar{
+	background-color: magenta;
+	font-size: 10px;
+	float:left;
+	width:25%;
+	}
+.footer{
+	background-color: magenta;
+	font-size: 10px;
+	width:100%;
+	clear:both;	
+	}
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
+*{
+	margin:0;
+	padding:0;
+	font-weight: bolder;
+}
+
+body{
+	background-image: url(../img/fondo.jpg);
+	color:white;
+	font-family: Helvetica, Verdana;
+	font-size: 2em;
+}
+h1{
+	color:orange;
+	margin:0.25em auto;
+	text-align: center;
+	text-shadow:5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+/*Exercise 3, Section 2.3*/
+.header{
+	font-size: 46px;
+}
+.footer{
+	font-size: 10px;
+}
+.content{
+	font-size: 14px;
+}
+.navigation{
+	font-size: 12px;
+}
+.sidebar{
+	font-size: 10px;
+}
+
+#Header1,#Footer1 {
+	/*background: blue;*/
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+}
+#Container{
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0em;
+	text-align: center;
+}
+#Section1, nav,aside{
+	/*background: blue;*/
+	border-radius: 0.5em;
+	display: inline-block;
+	max-width: 960px;
+	min-height: 500px;
+	padding: 0.25em;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+}
+article,#Header2,#Footer2{
+	/*background: #011E30;*/
+	border-radius: 0.5em;
+	display: block;
+	margin: 0;
+	min-height: 20px;
+	padding: 0.25em;
+}
+article{
+	min-height: 120px;
+	position: relative;
+	top: 0.1em;
+}
+#Footer2{
+	position: absolute;
+	bottom: 5px;
+	width: 95%;
+	
+}
+#Section1{
+	width:45%;
+}
+aside,nav{
+	width: 22%
+}
+/*Exercise 4 and 5 Section 2.3*/
+*[class*="r"]{
+	background-color: magenta;
+}
+*[class*="a"]:not(*[class*="r"]){
+	background-color: blue;
+}
