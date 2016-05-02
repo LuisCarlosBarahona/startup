@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Verdana;
+}
+
+section, button,.ajax {
+	text-align: center;
+	display: block;
+}
+
+.hidden{
+	color:blue;
+	display: none;
+}
+.alias{
+	min-height: 20%;
+	min-width: 30%;
+	border: 0.5em double steelblue;
+	border-radius: 5%;
+	border-color: steelblue;
+}
+div{
+	margin-top: 1em;
+	padding: auto;
+	min-height: 20%;
+}
+section{
+	margin-top: 1em;
+}
+button{
+	margin: auto;
+	background-color: steelblue; 
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em, 1em;
+    min-width: 10%;
+    min-height: 10%
+}
+.ajax{
+	display: inline-block;
+	margin: auto;
+	margin-top: 1em;
+	min-height: 10em;
+	min-width: 30%;
+	max-width: 30%;
+	background-color: steelblue;
+	text-align: center;
+}
+p{
+	color: white;
+	padding: 5em 1em;
+	
+}
+
