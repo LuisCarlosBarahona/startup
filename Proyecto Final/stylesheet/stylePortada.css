@@ -1,0 +1,155 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+/*@media (min-width: 40rem) { 
+  html { font-size: 85%; }
+}*/
+@media (max-width: 767px) and (min-width: 320px) {
+  body {
+    font-size: 80%;
+   }
+   nav{
+   	min-width: 100%;
+   	font-size: 70%
+   }
+   article{
+   	font-size: 75%;
+   	
+   }
+   .infoContainer{
+   	width: 95%;
+   	max-height: 5em;
+   	font-size: 75%;
+   }
+   #bottomContainer{
+   	min-height: 15em;
+   }
+   a:link{
+   	width: 11.2em;
+   	font-size: 145%;
+   }
+
+   
+}
+@media all and (max-width: 1440px) and (min-width: 768px)
+ { 
+  html { font-size: 120%; }
+  .infoContainer{
+  	max-width: 30%;
+  }
+}
+*{
+	margin:0;
+	padding:0;
+	font-family: Tahoma,Helvetica, Verdana;
+}
+.container,a:link{
+	font-size: 1em;
+}
+#topContainer , #bottomContainer{
+	position:relative;
+	background-color: transparent;
+	height: 6.25em;
+	width:100%;
+	padding-left: 0.8em;
+}
+#midContainer{
+	display:inline-block;
+	position:relative;
+	background-color: transparent;
+	height: 33em;
+	width:100%;
+}
+#navContainer{
+	position:absolute;
+	border-style: solid;
+	bottom: 0;
+	left:1em;
+	background-color: transparent;
+	width:50%;
+	min-height: 30%;
+	vertical-align: top;
+}
+nav {
+	background-color: transparent;
+	display:inline-block;
+	margin: 0em 0.36em;
+	font-color: #C5E9EA;
+}
+a:link {
+    background-color:  transparent;
+    text-align: center;	
+    text-decoration: none;
+    /*font-size: 1.5em;*/
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: steelblue;
+}
+#leftContainer{
+	position:absolute;
+	left:0;
+	min-height: 100%;
+	background-color: transparent;
+	width: 70%
+}
+aside{
+	position: absolute;
+	right:0;
+	margin-top: 1.25em;
+	margin-right: 1.0em;
+	min-height: 95%;
+	background-color: #E4DEDE;
+	width:30%;
+}
+
+#imgContainer{
+	position: absolute;
+	top: 0;
+	background-color: transparent;
+	margin: 0;
+	padding: auto;
+	padding-left: 0.8em;
+	min-height: 63%;
+	max-height: 65%;
+	width: 97%;
+}
+article{
+	background-color: transparent;
+	font-color:red;
+	position: absolute;
+	bottom: 0;
+	padding: 1.25em;
+	min-height: 30%;
+	width: 95%;
+}
+.img, .infoContainer {
+	background-color: steelblue;
+	display: inline-block;
+	margin: auto;
+	min-width: 29%;
+	
+}
+#imgContainer>.img{
+	/*margin-left: 0.5em;*/
+	margin-top: 1.25em;
+	min-height: 18.75em;
+}
+.infoContainer {
+	
+	margin-top: 0.625em;
+	padding: 0.313em;
+	padding-left: 2em;
+	min-height: 4.5em;
+	min-width: 24%;
+	vertical-align: top;
+	text-align: justify;
+}
+
+

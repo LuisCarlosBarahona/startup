@@ -1,0 +1,207 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+/*@media (min-width: 40rem) { 
+  html { font-size: 85%; }
+}*/
+
+@media all and (max-width: 1440px) and (min-width: 768px)
+ { 
+  html { font-size: 120%; }
+  .infoContainer{
+  	max-width: 30%;
+  }
+}
+*{
+	margin:0;
+	padding:0;
+	font-family: Tahoma,Helvetica, Verdana;
+}
+.container,a:link{
+	font-size: 1em;
+}
+#topContainer , #bottomContainer{
+	position:relative;
+	background-color: transparent;
+	height: 6.25em;
+	width:100%;
+	padding-left: 0.8em;
+}
+#midContainer{
+	display:inline-block;
+	position:relative;
+	background-color: transparent;
+	height: 33em;
+	width:100%;
+}
+#navContainer{
+	position:absolute;
+	border-style: solid;
+	bottom: 0;
+	left:1em;
+	background-color: transparent;
+	width:50%;
+	min-height: 30%;
+	vertical-align: top;
+}
+nav {
+	background-color: transparent;
+	display:inline-block;
+	margin: 0em 0.36em;
+	font-color: #C5E9EA;
+	text-align: center;
+}
+a {
+    background-color:  transparent;
+    text-align: center;	
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: steelblue;
+}
+#leftContainer{
+	position:absolute;
+	left:0;
+	min-height: 100%;
+	background-color: transparent;
+	width: 70%
+}
+aside{
+	position: absolute;
+	right:0;
+	margin-top: 1.25em;
+	margin-right: 1.0em;
+	min-height: 95%;
+	background-color: #E4DEDE;
+	width:30%;
+}
+#resumeCont,#videoCont,h4{
+	display:block;
+	width:100%;
+	height: 15em;
+}
+#vidContainer{
+	height:10em;
+}
+h4{
+	height: 4em;
+	margin-left: 1em;
+	padding-top: 1.5em;
+}
+#imgCont{
+	float:left;
+	width:35%;
+	height: 14em;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+img{
+	width:100%;
+	height:100%;
+}
+#reviewCont>p{
+	float:right;
+	top: 0;
+	width:58%;
+	height: 8em;
+	margin-right: 0.8em;
+	
+	padding:1.5em 0.5em;
+}
+#rating{
+	float:right;
+	bottom: 0;
+	height: 5em;
+	padding: 0.8em;
+	width:60%;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  float:left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.5em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+video{
+	width: 20em;
+	height: 9em;
+	margin-top: 2em;
+	margin-left: 1em;
+}
+.infoContainer {
+	background-color: steelblue;
+	display: inline-block;
+	margin: auto;
+	min-width: 29%;
+	
+}
+
+.infoContainer {
+	
+	margin-top: 0.625em;
+	padding: 0.313em;
+	padding-left: 2em;
+	min-height: 4.5em;
+	min-width: 24%;
+	vertical-align: top;
+	text-align: justify;
+}
+
+@media (max-width: 767px) and (min-width: 319px) {
+  body {
+    font-size: 80%;
+   }
+   nav{
+   	min-width: 100%;
+   	font-size: 70%
+   }
+   article{
+   	font-size: 75%;
+   	}
+   aside{
+   	height: 0;
+   	width:0;
+   	}
+   	#leftContainer{
+   		width:100%;
+   	}
+   .infoContainer{
+   	width: 95%;
+   	max-height: 5em;
+   	font-size: 75%;
+   }
+   #bottomContainer{
+   	min-height: 15em;
+   }
+   a:link{
+   	width: 11.2em;
+   	font-size: 140%;
+   }
+   #reviewCont#reviewCont>p{
+	float:right;
+	top: 0;
+	width:55%;
+	height: 8em;
+	margin-right: 0.8em;
+	padding:1.5em 0.5em;
+}
+
+   
+}

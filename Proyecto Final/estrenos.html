@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <!--<link rel="stylesheet" href="css/main.css">-->
+        <link rel="stylesheet" href="stylesheet/styleEstrenos.css">
+    </head>
+    <body>
+        <section class="container" id="topContainer">
+            <section id="navContainer">
+                <nav>
+                    <a href="alta_pelicula.html">Home</a>
+                </nav>
+                <nav>
+                    <a href="alta_pelicula.html">Movies</a>
+                </nav>
+                <nav>
+                    <a href="alta_pelicula.html">Help</a>
+                </nav>
+                <nav>
+                    <a href="alta_pelicula.html">Contact</a>
+                </nav>
+                <nav>
+                    <a href="alta_pelicula.html">About us</a>
+                </nav>
+            </section>
+        </section>
+        <section class="container" id="midContainer">
+            <section class="container" id="leftContainer">
+                <div id="userSearchCont">
+                    <div id="buttonCont">
+                       <button id="allMovies">
+                           Todas
+                       </button>
+                       <button id="popularMovies">
+                           Populares
+                       </button> 
+                       <button id="recentMovies">
+                           Recientes
+                       </button>
+                    </div>
+                    <div id="textdpdCont">
+                        <input type="text" id="textdpdCont1" placeholder="Search for an actor or director">                            
+                        </input>
+                        <select id="selectGenre">
+                            
+                        </select>
+                    </div>
+                </div>
+                <div id="imgContainer">
+                    
+                </div>
+            </section>
+            <aside>
+            </aside>        
+        </section>
+        <section class="container" id="bottomContainer">
+            <section class="infoContainer">
+                social media
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <footer class="infoContainer">
+                Copyright
+            </footer>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript">
+            
+            $(document).ready(function(){           //Select option for 'estrenos' is ready for being used.
+                var genres=getGenreMovies();
+                for(i=0; i<genres.length;i++){
+                    $('#selectGenre').append('<option>'+ genres[i] + '</option>');  
+                }
+                
+                var allMovies=getAllMovies();
+                     for(i=0;i<allMovies.length;i++){
+                        $('#imgContainer').append('<div class = "img"><img src="'+allMovies[i].poster + '"></img><div class="description"><p>'+allMovies[i].plot+'</p></div></div>');
+                    }
+                $('#textdpdCont1').keypress(function(e) {
+                if(e.which == 13) {
+                    $('#imgContainer').empty();
+                    var matches=getMatchUserData($('#textdpdCont1').val());
+                    for(i=0;i<matches.length;i++){
+                        $('#imgContainer').append('<div class = "img"><img src="'+matches[i].poster + '"></img><div class="description"><p>'+matches[i].plot+'</p></div></div>');
+                    }
+                }
+                });
+                $('#allMovies').click(function(){
+                    $('#imgContainer').empty();
+                    var allMovies=getAllMovies();
+                     for(i=0;i<allMovies.length;i++){
+                        $('#imgContainer').append('<div class = "img"><img src="'+allMovies[i].poster + '"></img><div class="description"><p>'+allMovies[i].plot+'</p></div></div>');
+                    }
+                });
+                $('#popularMovies').click(function(){
+                     $('#imgContainer').empty();
+                     var popularMovies=getPopularMovies();
+                     for(i=0;i<popularMovies.length;i++){
+                         $('#imgContainer').append('<div class = "img"><img src="'+popularMovies[i].poster + '"></img><div class="description"><p>'+popularMovies[i].plot+'</p></div></div>');
+                     }
+                });
+                $('#recentMovies').click(function(){
+                     $('#imgContainer').empty();
+                     var recentMovies=getOrderedMoviesByReleased();
+                     for(i=0;i<recentMovies.length;i++){
+                         $('#imgContainer').append('<div class = "img"><img src="'+recentMovies[i].poster + '"></img><div class="description"><p>'+recentMovies[i].plot+'</p></div></div>');
+                     }
+                });
+                });
+        </script>
+    </body>
+</html>

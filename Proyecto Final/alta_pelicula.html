@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <!--<link rel="stylesheet" href="css/main.css">-->
+        <link rel="stylesheet" href="stylesheet/styleAltaPelicula.css">
+        
+    </head>
+    <body>
+    <div id="backgroundCont">
+        <section class="container" id="topContainer">
+            <section id="navContainer">
+                <nav>
+                    <a>Home</a>
+                </nav>
+                <nav>
+                    <a>Movies</a>
+                </nav>
+                <nav>
+                    <a>Help</a>
+                </nav>
+                <nav>
+                    <a>Contact</a>
+                </nav>
+                <nav>
+                    <a>About us</a>
+                </nav>
+            </section>
+        </section>
+        <section class="container" id="midContainer">
+            <section class="container" id="leftContainer">
+                <section id="imgContainer">
+                    <section class="img">
+                        image 1
+                    </section>
+                    <section class="img">
+                        image 2
+                    </section>
+                    <section class="img">
+                        image 3
+                    </section>
+                </section>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </article>
+            </section>
+            <aside>
+                Annoying banners
+            </aside>        
+        </section>
+        <section class="container" id="bottomContainer">
+            <section class="infoContainer">
+                social media
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <footer class="infoContainer">
+                Copyright
+            </footer>
+ 	    </section>
+    </div>
+    <div id="altaPeliculaCont">
+    	<div>
+    		<h5>NUEVA PELICULA</h5>
+    	</div>
+    	<div id="margin"></div>
+    	<div>
+    		<div class="infoCont">
+    			<div class="titleItemsCont"><p>Título</p></div>
+    			<div class="itemsCont"><input type="text" id="titleText"></input></div>
+    			<div class="hzontalMargin"></div>
+    			<div class="titleItemsCont"><p>Fecha de estreno</p></div>
+    			<div class="itemsCont"><input type="date" id="date"></input></div>
+    		</div>
+    	</div>
+    	<div>
+    		<div class="infoCont">
+    			<p class="titleItemsCont">Categoría</p>
+    			<select class="itemsCont" id="genreItems">
+    			
+    			</select>
+    		<div class="hzontalMargin"id="hzontalMargin2"></div>
+    			<p class="titleItemsCont">Puntaje</p>
+    			<input type="text" id="scoreText" class="itemsCont"></input>
+    		</div>
+    	</div>
+    	<div id="margin"></div>
+    	<p>
+    		Descripcion
+    	</p>
+    	<input type=text id="descripcionTxtArea">
+    		
+    	</input>
+    	<div id="margin"></div>
+    	<div>
+			<div id="buttonCont">    	
+    			<div class="submitCont" id="OKbtn">OK</div>
+    			<div class="submitCont">Cancel</div>
+    		</div>
+    	</div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var genres=getGenreMovies();
+                for(i=0; i<genres.length;i++){
+                    $('#genreItems').append('<option>'+ genres[i] + '</option>');  
+                }
+            $('#OKbtn').click(function(){
+                var title = $('#titleText').val();
+                var date = $('#date').val();
+                var genre = $('#genreItems').val();
+                var score =$('#scoreText').val();
+                var plot = $('#descripcionTxtArea').val();
+                
+                console.log("title: "+title + ", release_date: "+ date + ", genre: " + genre + ", rating: "+ score + ", plot: "+ plot);    
+        });
+            
+
+            });
+
+
+    </script>
+    </body>
+</html>

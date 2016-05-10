@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <!--<link rel="stylesheet" href="css/main.css">-->
+        <link rel="stylesheet" href="stylesheet/styleFichaPelicula.css">
+        
+    </head>
+    <body>
+        <section class="container" id="topContainer">
+            <section id="navContainer">
+                <nav>
+                    <a>Home</a>
+                </nav>
+                <nav>
+                    <a>Movies</a>
+                </nav>
+                <nav>
+                    <a>Help</a>
+                </nav>
+                <nav>
+                    <a>Contact</a>
+                </nav>
+                <nav>
+                    <a>About us</a>
+                </nav>
+            </section>
+        </section>
+        <section class="container" id="midContainer">
+            <section class="container" id="leftContainer">
+                
+                <div id="resumeCont">
+                    <div id="imgCont">
+                        
+                        </img>
+                    </div>
+                    <div id="reviewCont">
+                        
+                        <div id="rating">
+                            <div class="rating">
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="vidContainer">
+                    <video width="320" height="210" controls>
+                    <source src="img/video.mp4" type="video.mp4">
+                               
+                    </video>
+                </div>
+            </section>
+            <aside>
+                
+            </aside>        
+        </section>
+        <section class="container" id="bottomContainer">
+            <section class="infoContainer">
+                social media
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <footer class="infoContainer">
+                Copyright
+            </footer>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            var parseQueryString = function() {
+
+                var str = window.location.search;
+                var objURL = {};
+
+                str.replace(
+                    new RegExp( "([^?=&]+)(=([^&]*))?", "g" ),
+                    function( $0, $1, $2, $3 ){
+                    objURL[ $1 ] = $3;
+                    }
+                );
+                return objURL;
+                };
+
+                //Example how to use it: 
+                
+                
+                $(document).ready(function(){
+                    var params=parseQueryString();
+                    var id = parseInt(params["id"]);
+                    var movie=getMovieById(id);
+                    $('#titleMovie1').append('<h4>'+ movie[0].title +'</h4>');
+                    $('#imgCont').append('<img src="'+movie[0].poster +'"></img>');
+                    $('#reviewCont').append('<p>'+movie[0].plot+'</p>'); 
+                    console.log(movie[0]);   
+                });
+
+        </script>
+    </body>
+</html>
