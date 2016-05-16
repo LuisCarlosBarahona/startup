@@ -1,0 +1,40 @@
+<section class="container" id="midContainerFPelicula" ng-controller='fichaPeliculaCtrl'>
+    <section class="container" id="leftContainerFPelicula">
+        <h4>{{movie.title}}</h4>
+        <div id="resumeContFPelicula">
+            <div id="imgContFPelicula">
+                <img id="posterFPelicula" ng-src={{movie.poster}}>
+                </img>
+            </div>
+            <div id="reviewContFPelicula">
+                <p>{{movie.plot}}</p>
+                <div id="ratingFPelicula">
+                    <div class="ratingFPelicula">
+                        <div>{{movie.rating}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vidContainer">
+            <video width="320" height="210" controls>
+            <source src="img/video.mp4" type="video.mp4">
+                       
+            </video>
+        </div>
+    </section>
+    <aside id="asideFPelicula">
+        
+    </aside>        
+</section>
+ 
+                
+                
+                <!-- // $(document).ready(function(){
+                //     var params=parseQueryString();
+                //     var id = parseInt(params["id"]);
+                //     var movie=getMovieById(id);
+                //     $('#titleMovie1').append('<h4>'+ movie[0].title +'</h4>');
+                //     $('#imgCont').append('<img src="'+movie[0].poster +'"></img>');
+                //     $('#reviewCont').append('<p>'+movie[0].plot+'</p>'); 
+                //     console.log(movie[0]);   
+                // }); -->

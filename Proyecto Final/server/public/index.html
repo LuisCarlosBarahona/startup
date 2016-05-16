@@ -1,0 +1,70 @@
+<!doctype html>
+	<head>
+		<base href="/">
+		<title>Movies</title>
+		<script src="node_modules/angular/angular.js"></script>
+	 	<script src="node_modules/angular-route/angular-route.js"></script>
+	  	<script src="scripts/script.js"></script>
+	  	<script src="controllers/estrenosController.js"></script>
+	  	<script src="controllers/fichaPeliculaController.js"></script>
+	  	 <meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	    <!-- Place favicon.ico in the root directory -->
+
+	    <!--<link rel="stylesheet" href="css/normalize.css">-->
+	    <!--<link rel="stylesheet" href="css/main.css">-->
+	    <!--<link rel="stylesheet" href="stylesheet/styleEstrenos.css">-->
+	    <link rel="stylesheet" href="stylesheet/stylePortada.css">
+	</head>
+	<body ng-app='movieApp' ng>
+		<section class="container" id="topContainer">
+		    <section id="navContainer">
+		        <nav>
+		            <a href="/">Home</a>
+		        </nav>
+		        <nav>
+		            <a href="movies">Movies</a>
+		        </nav>
+		        <nav>
+		            <a href="alta_pelicula.html">Help</a>
+		        </nav>
+		        <nav>
+		            <a href="alta_pelicula.html">Contact</a>
+		        </nav>
+		        <nav>
+		            <a href="alta_pelicula.html">About us</a>
+		        </nav>
+		    </section>
+		</section>
+			<div ng-controller="mainCtrl">
+				
+			</div>
+		<div ng-view></div>
+		<section class="container" id="bottomContainer">
+            <section class="infoContainer">
+                social media
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <section class="infoContainer">
+                <ul>
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3</li>
+                </ul>
+            </section>
+            <footer class="infoContainer">
+                Copyright
+            </footer>
+        </section>
+	</body>
+</html>
