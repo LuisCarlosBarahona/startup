@@ -1,0 +1,288 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { font-size: 100%; }
+
+   
+}
+@media all and (max-width: 1440px) and (min-width: 767px)
+ { 
+  html { font-size: 120%; }
+  .infoContainer{
+  	max-width: 30%;
+  }
+}
+*{
+	margin:0;
+	padding:0;
+	font-family: Tahoma,Helvetica, Verdana;
+}
+.container,a:link{
+	font-size: 1em;
+}
+#topContainer , #bottomContainer{
+	position:relative;
+	background-color: transparent;
+	height: 6.25em;
+	width:100%;
+	padding-left: 0.8em;
+}
+#midContainer{
+	display:inline-block;
+	position:relative;
+	background-color: transparent;
+	height: 40em;
+	width:100%;
+}
+#navContainer{
+	position:absolute;
+	border-style: solid;
+	bottom: 0;
+	left:1em;
+	background-color: transparent;
+	width:50%;
+	min-height: 30%;
+	vertical-align: top;
+}
+nav {
+	background-color: transparent;
+	display:inline-block;
+	margin: 0em 0.36em;
+	font-color: #C5E9EA;
+}
+a:link {
+    background-color:  transparent;
+    text-align: center;	
+    text-decoration: none;
+    /*font-size: 1.5em;*/
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: steelblue;
+}
+#textdpdCont1{
+	height: 2.3em;
+	width: 15em;
+}
+#leftContainer{
+	position:absolute;
+	left:0;
+	min-height: 100%;
+	background-color: transparent;
+	width: 80%
+}
+aside{
+	
+	position: absolute;
+	right:0;
+	/*margin-top: 1.25em;*/
+	margin-right: 1.0em;
+	min-height: 95%;
+	background-color: #E4DEDE;
+	width:20%;
+}
+
+#imgContainer,#descriptionCont,#userSearchCont{
+	display: block;
+	top: 0;
+	background-color: transparent;
+	margin-left: 0.6em;
+	padding-left: 0.8em;
+	height: 35em;
+	width: 95%;
+}
+
+#userSearchCont{
+	background-color: transparent;
+	height: 3em;
+}
+#buttonCont, #textdpdCont{
+	display: inline;
+	min-height: 3em;
+	
+}
+#buttonCont{
+	float: left;
+	margin-left: 0.3em;
+	padding-top: 0.5em;
+	width: 38%;
+}
+#textdpdCont{
+	float: right;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	vertical-align: bottom;
+	width:60%;
+}
+textarea{
+	display:inline;
+	width: 60%;
+	resize: none;
+	overflow: hidden;
+}
+
+textarea, select{
+	height: 2.3em;
+	vertical-align: bottom;
+}
+
+button {
+    background-color: #BDBDBD;
+    color: white;
+    display: inline;
+    padding: 0.5em;
+    font-size: 0.74em;
+    border: none;
+    cursor: pointer;
+}
+#descriptionCont{
+	background-color: transparent;
+	height: 4em;
+}
+.img{
+	display:inline-block;
+	width: 19%;	
+	min-height: 17em;
+	border-color: black;
+	border-style : solid;
+	position:relative;
+}
+img{
+	min-height: 10.5em;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+.description{
+	min-height: 4em;
+	font-size: 0.7em;
+	position:absolute;
+	bottom: 0em;
+}
+
+.infoContainer {
+	background-color: steelblue;
+	display: inline-block;
+	margin: auto;
+	min-width: 29%;
+}
+.infoContainer {
+	
+	margin-top: 0.625em;
+	padding: 0.313em;
+	padding-left: 2em;
+	height: 4.5em;
+	min-width: 24%;
+	vertical-align: top;
+	text-align: justify;
+}
+@media (max-width: 766px) and (min-width: 319px) {
+  body {
+    font-size: 80%;
+   }
+   #navContainer{
+   	border-color:transparent;
+   }
+   nav{
+   	min-width: 100%;
+   	font-size: 70%
+   }
+   .img{
+	display:inline-block;
+	width: 22%;
+	min-height: 10em;
+	border-color: black;
+	border-style : solid;
+	position:relative;
+}
+	img{
+	min-height: 6em;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+#buttonCont, #textdpdCont{
+	display: block;
+	min-height: 3em;
+	
+}
+#buttonCont{
+	
+	margin-left: 0.3em;
+	padding-top: 0.5em;
+	width: 90%;
+}
+#textdpdCont{
+	float: right;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	vertical-align: bottom;
+	width:90%;
+}
+textarea{
+	display:inline;
+	width: 90%;
+	resize: none;
+	overflow: hidden;
+}
+
+textarea, select{
+	height: 2.3em;
+	vertical-align: bottom;
+	font-size: 0.7em;
+}
+
+button {
+    background-color: #BDBDBD;
+    color: white;
+    padding: 0.5em;
+    font-size: 0.74em;
+    border: none;
+    cursor: pointer;
+}
+#imgContainer,#descriptionCont,#userSearchCont{
+	display: block;
+	top: 0;
+	background-color: transparent;
+	margin: 0;
+	padding-left: 0.8em;
+	height: 7em;
+	width: 95%;
+}
+.description{
+	min-height: 4em;
+	position:absolute;
+	bottom: 0em;
+	font-size: 0.3em;
+}
+   #leftContainer{
+   	display:inline;
+    width:100%;
+   }
+   aside{
+   	width: 0;
+   	height: 0em;
+   }
+   .infoContainer{
+   	width: 45%;
+   	max-height: 3em;
+   	font-size: 0.8em;
+   }
+   #bottomContainer{
+   	min-height: 5em;
+   	bottom: 0;
+   }
+   a:link{
+   	width: 11.2em;
+   	font-size: 145%;
+   }
+  li{
+  	font-size: 0.5em;
+  }
+
+   }
+
+}

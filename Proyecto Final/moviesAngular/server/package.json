@@ -1,0 +1,16 @@
+{
+  "name": "server_movies",
+  "version": "1.0.0",
+  "description": "A server for the movies application for BootCamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "server",
+    "movies",
+    "bootCamp"
+  ],
+  "author": "Luis Carlos Barahona R",
+  "license": "ISC"
+}

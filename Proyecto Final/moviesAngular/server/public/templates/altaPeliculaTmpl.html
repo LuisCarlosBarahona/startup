@@ -1,0 +1,89 @@
+<div ng-controller='altaPeliculaCtrl'>
+    <div id="backgroundCont">
+        <section class="container" id="midContainerPortada" >
+            <section class="container" id="leftContainerPortada">
+                <section id="imgContainerPortada">
+                    <section class="imgPortada" >
+                        <img class="imgPoster" src="img/captainAmerica.jpg"/>
+                    </section>
+                    <section class="imgPortada" >
+                        <img class="imgPoster" src="img/embraceSerpent.jpg"/>
+                    </section>
+                    <section class="imgPortada" >
+                        <img  class="imgPoster" src="img/citizenKane.jpg"/>
+                    </section>
+                </section>
+                <article id="articlePortada">
+                    We are creating one of the best websites to enjoy classic films, and even premieres for FREE! But wait a minute, there's no piracy here... We are commited with the autors rights, so this page is sustained based on your donations and the work of many managers. Our primal impulse is the love for this art, and we are so happy to share our passion with all of you. So give us a like, or share our content in Facebook, and Twitter. Thanks for watching!
+                </article>
+            </section>
+            <aside id="asidePortada">
+                
+             </aside>        
+        </section>
+    </div>
+    <div id="altaPeliculaCont">
+    	<div>
+    		<h5>NEW MOVIE</h5>
+    	</div>
+    	<div id="margin"></div>
+    	<div>
+    		<div class="infoCont">
+    			<div class="titleItemsCont"><p>Title</p></div>
+    			<div class="itemsCont"><input type="text" id="titleText" ng-model="newMovie.title"></input></div>
+    			<div class="hzontalMargin"></div>
+    			<div class="titleItemsCont"><p>Release Date</p></div>
+    			<div class="itemsCont"><input type="date" id="date" ng-model="newMovie.releaseDate"></input></div>
+    		</div>
+    	</div>
+    	<div>
+    		<div class="infoCont">
+    			<p class="titleItemsCont">Genre</p>
+    			<select class="itemsCont" id="genreItems" ng-model="newMovie.genre">
+    			     <option ng-repeat="genre in genres">{{genre}}</option>
+    			</select>
+    		<div class="hzontalMargin"id="hzontalMargin2"></div>
+    			<p class="titleItemsCont">Score</p>
+    			<input type="text" id="scoreText" class="itemsCont" ng-model="newMovie.rating"></input>
+    		</div>
+    	</div>
+    	<div id="margin"></div>
+    	<p>
+    		Plot
+    	</p>
+    	<input type=text id="descripcionTxtAreaAPelicula">
+    		
+    	</input>
+    	<div id="margin"></div>
+    	<div>
+    		<div id="buttonContAPelicula">    	
+    			<div class="submitCont" id="OKbtn" ng-click="addMovie();">OK</div>
+    			<div class="submitCont">Cancel</div>
+    		</div>
+    	</div>
+    </div>
+</div>
+    <!--<script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var genres=getGenreMovies();
+                for(i=0; i<genres.length;i++){
+                    $('#genreItems').append('<option>'+ genres[i] + '</option>');  
+                }
+            $('#OKbtn').click(function(){
+                var title = $('#titleText').val();
+                var date = $('#date').val();
+                var genre = $('#genreItems').val();
+                var score =$('#scoreText').val();
+                var plot = $('#descripcionTxtArea').val();
+                
+                console.log("title: "+title + ", release_date: "+ date + ", genre: " + genre + ", rating: "+ score + ", plot: "+ plot);    
+        });
+            
+
+            });
+
+
+    </script>-->
+
